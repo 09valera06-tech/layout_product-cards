@@ -11,11 +11,11 @@
     background: url($star-default) center no-repeat;
   }
 
-  @for $i from 1 through 5 {
-    &--#{$i} {
-      .stars__star:nth-child(-n + #{$i}) {
-        background-image: url($star-active);
-      }
-    }
+  &--1 .stars__star:nth-child(-n + 1),
+  &--2 .stars__star:nth-child(-n + 2),
+  &--3 .stars__star:nth-child(-n + 3),
+  &--4 .stars__star:nth-child(-n + 4),
+  &--5 .stars__star:nth-child(-n + 5) {
+    background-image: url($star-active);
   }
 }
